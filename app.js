@@ -1,4 +1,4 @@
-const fetch = require("node-fetch")
+const fetch = require("node-fetch") // npm install node-fetch@2.6.1
 
 setInterval(() => {
   const random = String(Math.random() * 10).replace(".","")
