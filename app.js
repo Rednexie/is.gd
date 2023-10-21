@@ -1,7 +1,7 @@
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const cluster = require('cluster');
 const main = cluster.isMaster;
-const cores = 10;
+const cores = Math.round(require("os").cpus().length / 2);
 
 if (main) {
   for (let i = 0; i < cores; i++) {
