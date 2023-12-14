@@ -1,3 +1,5 @@
+lack of rate limiting vulnerabiliy.
+
 use multithreading to short links on is.gd.
 
 
